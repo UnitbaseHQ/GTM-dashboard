@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-05T00:00:00.000Z",
+  "stats": { "total_contacts": 0, "total_companies": 0, "icp_in_count": 0 },
+  "hot_accounts": [],
+  "funnel": { "none": 0, "requested": 0, "accepted": 0, "declined": 0, "total": 0 },
+  "coverage_matrix": [],
+  "weekly_activity": {
+    "connections_requested": { "this_week": 0, "last_week": 0, "delta": 0 },
+    "connections_accepted": { "this_week": 0, "last_week": 0, "delta": 0 },
+    "dms_sent": { "this_week": 0, "last_week": 0, "delta": 0 },
+    "replies": { "this_week": 0, "last_week": 0, "delta": 0 }
+  }
+}
