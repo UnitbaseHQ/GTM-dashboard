@@ -1,13 +1,551 @@
 {
-  "generated_at": "2026-05-05T00:00:00.000Z",
-  "stats": { "total_contacts": 0, "total_companies": 0, "icp_in_count": 0 },
-  "hot_accounts": [],
-  "funnel": { "none": 0, "requested": 0, "accepted": 0, "declined": 0, "total": 0 },
-  "coverage_matrix": [],
+  "generated_at": "2026-05-05T15:02:06.664Z",
+  "stats": {
+    "total_contacts": 100,
+    "total_companies": 100,
+    "icp_in_count": 100
+  },
+  "hot_accounts": [
+    {
+      "company_name": "Holualoa Companies",
+      "score": 73,
+      "last_signal_summary": "Steve Lindley: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "last_signal_at": "2026-05-12T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Steve Lindley",
+        "title": "Chief Operating Officer"
+      }
+    },
+    {
+      "company_name": "RISE A Real Estate Company",
+      "score": 71,
+      "last_signal_summary": "Jacquelyn Heflin: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "last_signal_at": "2026-05-12T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Jacquelyn Heflin",
+        "title": "Executive Vice President of Operations"
+      }
+    },
+    {
+      "company_name": "Atlantic Residential",
+      "score": 68,
+      "last_signal_summary": "Andrew Aaronson: The Wrap: OPM’s New AI Tool; GSA Reshapes FAS; Space Chief Nominated",
+      "last_signal_at": "2026-05-04T21:13:31.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Andrew Aaronson",
+        "title": "Chief Operating Officer"
+      }
+    },
+    {
+      "company_name": "Venterra Realty",
+      "score": 66,
+      "last_signal_summary": "Julie Tatom: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "last_signal_at": "2026-05-12T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Julie Tatom",
+        "title": "Senior Vice President - Property Operations"
+      }
+    },
+    {
+      "company_name": "LSA Management",
+      "score": 66,
+      "last_signal_summary": "Lisa Landis: CLAS 2026 - Future Ready Contracts and Legal Ops | LinkedIn",
+      "last_signal_at": "2026-05-12T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Lisa Landis",
+        "title": ""
+      }
+    },
+    {
+      "company_name": "Bell Partners Inc",
+      "score": 64,
+      "last_signal_summary": "Brent Steele: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "last_signal_at": "2026-05-12T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Brent Steele",
+        "title": "Vice President Operations Accounting & Finance"
+      }
+    },
+    {
+      "company_name": "Cardinal Group Companies",
+      "score": 64,
+      "last_signal_summary": "Hope Ivory: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "last_signal_at": "2026-05-12T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Hope Ivory",
+        "title": "VP of Operations"
+      }
+    },
+    {
+      "company_name": "Ambling",
+      "score": 64,
+      "last_signal_summary": "Mack Casey: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "last_signal_at": "2026-05-12T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Mack Casey",
+        "title": "Vice President of Operations"
+      }
+    },
+    {
+      "company_name": "Rise48 Equity",
+      "score": 63,
+      "last_signal_summary": "Dana Stadelman: A year ago, almost to the day, I was on my way to Slovenia for my very first time on stage. \n\nThat opportunity came because Danny McMillan  put me there — he saw something in me be",
+      "last_signal_at": "2026-05-09T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Dana Stadelman",
+        "title": "Vice President Operations"
+      }
+    },
+    {
+      "company_name": "Avenue5 Residential",
+      "score": 62,
+      "last_signal_summary": "Natasha Smith: A year ago, almost to the day, I was on my way to Slovenia for my very first time on stage. \n\nThat opportunity came because Danny McMillan  put me there — he saw something in me be",
+      "last_signal_at": "2026-05-09T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Natasha Smith",
+        "title": "Vice President Operations"
+      }
+    }
+  ],
+  "funnel": {
+    "none": 0,
+    "requested": 100,
+    "accepted": 0,
+    "declined": 0,
+    "total": 100
+  },
+  "coverage_matrix": [
+    {
+      "company_name": "Johnson Development Associates, Inc.",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Housing Trust Group, LLC",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Wasatch Property Management",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Grubb Properties",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "RISE A Real Estate Company",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Cambridge Management Services, Inc.",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Fogelman Properties",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "MC Companies",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Greenleaf",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "HOAMCO (Homeowners Association Management Company)",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Venterra Realty",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Asset Living",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Apartment Management Consultants",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Envolve LLC",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Segale Properties",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "PeakMade Real Estate",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Ascension Multifamily",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Juniper Investment Group",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Alturas Capital Partners",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "RPM Living",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Pensam",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Codina Partners",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Avenue5 Residential",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Arcan Capital",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Landmark Properties, Inc.",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Jamestown",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Mission Rock Residential, LLC",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Olympus Property",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Everest Holdings",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Unicorp National Developments, Inc.",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Pegasus Residential",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Bridge Investment Group",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Kairoi Residential",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Valiant Residential",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Atlantic Pacific Companies",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "MetroNational",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Southeast Centers",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Elmington",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Bell Partners Inc",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Preiss",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Rise48 Equity",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Kitson & Partners",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "WRH Realty Services, LLC",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Lake Washington Partners",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Celtic Property Management, LLC",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Fortis Property Management",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Atlantic Residential",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Ashford Communities",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Kane Realty Corporation",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Cardinal Group Companies",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    }
+  ],
   "weekly_activity": {
-    "connections_requested": { "this_week": 0, "last_week": 0, "delta": 0 },
-    "connections_accepted": { "this_week": 0, "last_week": 0, "delta": 0 },
-    "dms_sent": { "this_week": 0, "last_week": 0, "delta": 0 },
-    "replies": { "this_week": 0, "last_week": 0, "delta": 0 }
+    "connections_requested": {
+      "this_week": 97,
+      "last_week": 0,
+      "delta": 97
+    },
+    "connections_accepted": {
+      "this_week": 0,
+      "last_week": 0,
+      "delta": 0
+    },
+    "dms_sent": {
+      "this_week": 3,
+      "last_week": 0,
+      "delta": 3
+    },
+    "replies": {
+      "this_week": 0,
+      "last_week": 0,
+      "delta": 0
+    }
   }
 }

@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Unitbase GTM Dashboard</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #6C5CE7;
+        --primary-soft: rgba(108, 92, 231, 0.1);
+        --primary-softer: rgba(108, 92, 231, 0.05);
+        --bg: #ffffff;
+        --surface: #f8f9fa;
+        --fg: #111827;
+        --muted: #6b7280;
+        --muted-2: #9ca3af;
+        --border: #e5e7eb;
+        --green: #16a34a;
+        --red: #dc2626;
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+      }
+
+      *,
+      *::before,
+      *::after { box-sizing: border-box; }
+
+      html, body { margin: 0; padding: 0; }
+
+      body {
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--fg);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .app { display: flex; min-height: 100vh; }
+
+      /* Left nav */
+      nav.sidebar {
+        width: 88px;
+        flex-shrink: 0;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        background: #fff;
+        border-right: 1px solid var(--border);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 0;
+        gap: 4px;
+        z-index: 10;
+      }
+
+      .brand {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: #000;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      .nav-item {
+        width: 72px;
+        padding: 10px 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        cursor: pointer;
+        border-radius: 10px;
+        font-family: inherit;
+        font-size: 11px;
+        font-weight: 500;
+        transition: background 120ms ease, color 120ms ease;
+      }
+      .nav-item:hover { background: var(--surface); color: var(--fg); }
+      .nav-item.active { background: var(--primary-soft); color: var(--primary); }
+      .nav-item svg { width: 22px; height: 22px; stroke-width: 2; }
+
+      /* Main column */
+      main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: saturate(150%) blur(10px);
+        -webkit-backdrop-filter: saturate(150%) blur(10px);
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 32px;
+        z-index: 5;
+      }
+      .topbar h1 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+      .topbar .updated { font-size: 12px; color: var(--muted); }
+
+      .content { padding: 32px; flex: 1; }
+
+      .section { display: none; animation: fadeIn 200ms ease; }
+      .section.active { display: block; }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(4px); }
+        to { opacity: 1; transform: none; }
+      }
+
+      .section-head { margin-bottom: 24px; }
+      .section-head h2 {
+        margin: 0 0 4px;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .section-head p { margin: 0; color: var(--muted); font-size: 13px; }
+
+      /* Loading */
+      .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 80px 0;
+      }
+      .loading span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--primary);
+        animation: pulse 1.2s infinite ease-in-out both;
+      }
+      .loading span:nth-child(2) { animation-delay: 0.15s; }
+      .loading span:nth-child(3) { animation-delay: 0.3s; }
+      @keyframes pulse {
+        0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+        40% { transform: scale(1); opacity: 1; }
+      }
+
+      .empty {
+        padding: 48px 24px;
+        text-align: center;
+        color: var(--muted);
+        background: var(--surface);
+        border: 1px dashed var(--border);
+        border-radius: 12px;
+        font-size: 14px;
+      }
+
+      /* Hot accounts grid */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+        position: relative;
+      }
+      .card:hover {
+        border-color: rgba(108, 92, 231, 0.4);
+        box-shadow: var(--shadow-md);
+        transform: translateY(-1px);
+      }
+      .card .head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .card .name {
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: -0.01em;
+        line-height: 1.3;
+      }
+      .score {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 12px;
+        background: var(--primary-soft);
+        color: var(--primary);
+        padding: 4px 10px;
+        border-radius: 999px;
+        flex-shrink: 0;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .contact .who { font-size: 13px; font-weight: 500; }
+      .contact .role { font-size: 12px; color: var(--muted); }
+      .signal {
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.45;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .footer-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 11px;
+        color: var(--muted-2);
+        margin-top: 4px;
+        padding-top: 10px;
+        border-top: 1px solid var(--border);
+      }
+
+      /* Funnel */
+      .stat-hero {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 28px;
+      }
+      .stat-hero .num {
+        font-size: 44px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        color: var(--fg);
+      }
+      .stat-hero .label { color: var(--muted); font-size: 13px; }
+
+      .bars { display: flex; flex-direction: column; gap: 14px; max-width: 720px; }
+      .bar-row { display: flex; flex-direction: column; gap: 6px; }
+      .bar-row .top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+      }
+      .bar-row .top .lbl { font-weight: 500; }
+      .bar-row .top .val { color: var(--muted); font-variant-numeric: tabular-nums; }
+      .bar-track {
+        background: var(--surface);
+        border-radius: 999px;
+        height: 10px;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        background: var(--primary);
+        border-radius: 999px;
+        transition: width 280ms ease;
+      }
+      .bar-fill.muted { background: var(--muted-2); }
+
+      /* Coverage table */
+      .table-wrap {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      table.coverage {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+      }
+      table.coverage th,
+      table.coverage td {
+        text-align: left;
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--border);
+      }
+      table.coverage th {
+        background: var(--surface);
+        font-weight: 600;
+        color: var(--muted);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        user-select: none;
+        white-space: nowrap;
+      }
+      table.coverage th .arrow { margin-left: 4px; opacity: 0.6; font-size: 10px; }
+      table.coverage th.num,
+      table.coverage td.num { text-align: right; font-variant-numeric: tabular-nums; }
+      table.coverage tbody tr:last-child td { border-bottom: none; }
+      table.coverage tbody tr:hover { background: var(--primary-softer); }
+      .cell-zero { color: var(--muted-2); }
+      .cell-mid { color: var(--fg); }
+      .cell-high { color: var(--primary); font-weight: 700; }
+      .cell-total { font-weight: 600; }
+
+      /* Activity grid */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        max-width: 720px;
+      }
+      .stat-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+      }
+      .stat-card .title {
+        font-size: 12px;
+        color: var(--muted);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .stat-card .num {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin: 8px 0 6px;
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+      .stat-card .compare { font-size: 12px; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+      .delta { display: inline-flex; align-items: center; gap: 2px; font-weight: 600; font-variant-numeric: tabular-nums; }
+      .delta.up { color: var(--green); }
+      .delta.down { color: var(--red); }
+      .delta.flat { color: var(--muted); }
+
+      /* Footer */
+      .pagefoot {
+        padding: 24px 32px 32px;
+        color: var(--muted-2);
+        font-size: 11px;
+        text-align: center;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+      @media (max-width: 700px) {
+        .grid { grid-template-columns: 1fr; }
+        .stats-grid { grid-template-columns: 1fr; }
+        nav.sidebar { width: 72px; padding: 16px 0; }
+        .nav-item { width: 60px; padding: 8px 4px; }
+        .topbar { padding: 14px 18px; }
+        .content { padding: 20px 18px; }
+        .topbar h1 { font-size: 14px; }
+        .stat-hero .num { font-size: 36px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <nav class="sidebar" aria-label="Primary">
+        <div class="brand" title="Unitbase">U</div>
+        <button class="nav-item" data-section="hot" aria-label="Hot accounts">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          <span>Hot</span>
+        </button>
+        <button class="nav-item" data-section="funnel" aria-label="Pipeline funnel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          <span>Funnel</span>
+        </button>
+        <button class="nav-item" data-section="coverage" aria-label="Account coverage">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+          <span>Coverage</span>
+        </button>
+        <button class="nav-item" data-section="activity" aria-label="Weekly activity">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <span>Activity</span>
+        </button>
+      </nav>
+
+      <main>
+        <div class="topbar">
+          <h1>Unitbase GTM Dashboard</h1>
+          <div class="updated" id="updated">Last updated: —</div>
+        </div>
+
+        <div class="content">
+          <div id="loading" class="loading" aria-label="Loading">
+            <span></span><span></span><span></span>
+          </div>
+
+          <section class="section" id="section-hot" data-section="hot" hidden>
+            <div class="section-head">
+              <h2>Hot Accounts</h2>
+              <p>Top 10 by signal score</p>
+            </div>
+            <div id="hot-grid" class="grid"></div>
+          </section>
+
+          <section class="section" id="section-funnel" data-section="funnel" hidden>
+            <div class="section-head">
+              <h2>Pipeline Funnel</h2>
+              <p>Where contacts are in the LinkedIn outreach sequence</p>
+            </div>
+            <div class="stat-hero">
+              <div class="num" id="funnel-total">0</div>
+              <div class="label">ICP-passing contacts</div>
+            </div>
+            <div id="funnel-bars" class="bars"></div>
+          </section>
+
+          <section class="section" id="section-coverage" data-section="coverage" hidden>
+            <div class="section-head">
+              <h2>Account Coverage</h2>
+              <p>Companies × decision-maker personas</p>
+            </div>
+            <div id="coverage-wrap"></div>
+          </section>
+
+          <section class="section" id="section-activity" data-section="activity" hidden>
+            <div class="section-head">
+              <h2>Weekly Activity</h2>
+              <p>This week vs. last week</p>
+            </div>
+            <div id="activity-grid" class="stats-grid"></div>
+          </section>
+        </div>
+
+        <div class="pagefoot">Generated by Unitbase Operator OS</div>
+      </main>
+    </div>
+
+    <script>
+      const SECTIONS = ['hot', 'funnel', 'coverage', 'activity'];
+      const FUNNEL_ORDER = ['none', 'requested', 'accepted', 'declined'];
+      const FUNNEL_LABELS = { none: 'None', requested: 'Requested', accepted: 'Accepted', declined: 'Declined' };
+      const ACTIVITY_KEYS = [
+        ['connections_requested', 'Connections Requested'],
+        ['connections_accepted', 'Connections Accepted'],
+        ['dms_sent',             'DMs Sent'],
+        ['replies',              'Replies']
+      ];
+
+      let DATA = null;
+      let coverageSort = { col: 'total', dir: 'desc' };
+
+      function escapeHtml(s) {
+        return String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+      }
+
+      function activate(section) {
+        if (!SECTIONS.includes(section)) section = 'hot';
+        document.querySelectorAll('.nav-item').forEach(b => {
+          b.classList.toggle('active', b.dataset.section === section);
+        });
+        document.querySelectorAll('.section').forEach(el => {
+          const on = el.dataset.section === section;
+          el.classList.toggle('active', on);
+          el.hidden = !on;
+        });
+      }
+
+      function setUpdated(generatedAt) {
+        const el = document.getElementById('updated');
+        if (!generatedAt) { el.textContent = 'Last updated: Never'; return; }
+        const d = new Date(generatedAt);
+        const txt = isNaN(d.getTime()) ? 'Never' : d.toLocaleString(undefined, {
+          month: 'short', day: 'numeric', year: 'numeric',
+          hour: 'numeric', minute: '2-digit'
+        });
+        el.textContent = `Last updated: ${txt}`;
+      }
+
+      function renderHot(items) {
+        const root = document.getElementById('hot-grid');
+        if (!items || items.length === 0) {
+          root.innerHTML = '<div class="empty">No hot accounts in this run.</div>';
+          return;
+        }
+        root.innerHTML = items.map(h => {
+          const name = escapeHtml(h.company_name || '—');
+          const score = Number(h.score) || 0;
+          const c = h.top_contact || {};
+          const who = escapeHtml(c.name || '—');
+          const role = escapeHtml(c.title || '');
+          const signal = escapeHtml(h.last_signal_summary || 'No recent signal.');
+          const cnt = Number(h.contact_count) || 0;
+          const sigDate = h.last_signal_at ? new Date(h.last_signal_at) : null;
+          const sigStr = sigDate && !isNaN(sigDate.getTime())
+            ? sigDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
+            : '';
+          return `
+            <div class="card">
+              <div class="head">
+                <div class="name">${name}</div>
+                <div class="score">${score}</div>
+              </div>
+              <div class="contact">
+                <div class="who">${who}</div>
+                ${role ? `<div class="role">${role}</div>` : ''}
+              </div>
+              <div class="signal">${signal}</div>
+              <div class="footer-meta">
+                <span>${cnt} contact${cnt === 1 ? '' : 's'}</span>
+                <span>${sigStr}</span>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function renderFunnel(funnel, icpInCount) {
+        document.getElementById('funnel-total').textContent = (icpInCount ?? 0).toLocaleString();
+        const root = document.getElementById('funnel-bars');
+        const total = Number(funnel?.total) || 0;
+        if (!funnel || total === 0) {
+          root.innerHTML = '<div class="empty">No funnel data yet.</div>';
+          return;
+        }
+        const rows = FUNNEL_ORDER
+          .map(k => ({ key: k, count: Number(funnel[k]) || 0 }))
+          .sort((a, b) => b.count - a.count);
+        root.innerHTML = rows.map(r => {
+          const pct = total > 0 ? (r.count / total) * 100 : 0;
+          const fillClass = r.key === 'declined' ? 'muted' : '';
+          return `
+            <div class="bar-row">
+              <div class="top">
+                <span class="lbl">${FUNNEL_LABELS[r.key]}</span>
+                <span class="val">${r.count.toLocaleString()} · ${pct.toFixed(1)}%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill ${fillClass}" style="width:${pct}%"></div></div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function cellClass(n) {
+        if (n === 0) return 'cell-zero';
+        if (n <= 2) return 'cell-mid';
+        return 'cell-high';
+      }
+
+      function renderCoverage(rows) {
+        const wrap = document.getElementById('coverage-wrap');
+        if (!rows || rows.length === 0) {
+          wrap.innerHTML = '<div class="empty">No coverage data yet.</div>';
+          return;
+        }
+        const sorted = [...rows].sort((a, b) => {
+          const k = coverageSort.col;
+          const av = k === 'company_name' ? (a[k] || '') : (Number(a[k]) || 0);
+          const bv = k === 'company_name' ? (b[k] || '') : (Number(b[k]) || 0);
+          if (av < bv) return coverageSort.dir === 'asc' ? -1 : 1;
+          if (av > bv) return coverageSort.dir === 'asc' ? 1 : -1;
+          return 0;
+        });
+        const arrow = c =>
+          coverageSort.col === c
+            ? `<span class="arrow">${coverageSort.dir === 'asc' ? '▲' : '▼'}</span>`
+            : '';
+        const headers = [
+          ['company_name',   'Company',         false],
+          ['decision_maker', 'Decision Makers', true],
+          ['champion',       'Champions',       true],
+          ['influencer',     'Influencers',     true],
+          ['blocker',        'Blockers',        true],
+          ['total',          'Total',           true]
+        ];
+        wrap.innerHTML = `
+          <div class="table-wrap">
+            <table class="coverage">
+              <thead>
+                <tr>
+                  ${headers.map(([k, label, isNum]) =>
+                    `<th data-col="${k}" class="${isNum ? 'num' : ''}">${label}${arrow(k)}</th>`
+                  ).join('')}
+                </tr>
+              </thead>
+              <tbody>
+                ${sorted.map(r => `
+                  <tr>
+                    <td>${escapeHtml(r.company_name || '—')}</td>
+                    <td class="num ${cellClass(Number(r.decision_maker) || 0)}">${Number(r.decision_maker) || 0}</td>
+                    <td class="num ${cellClass(Number(r.champion) || 0)}">${Number(r.champion) || 0}</td>
+                    <td class="num ${cellClass(Number(r.influencer) || 0)}">${Number(r.influencer) || 0}</td>
+                    <td class="num ${cellClass(Number(r.blocker) || 0)}">${Number(r.blocker) || 0}</td>
+                    <td class="num cell-total">${Number(r.total) || 0}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        `;
+        wrap.querySelectorAll('th').forEach(th => {
+          th.addEventListener('click', () => {
+            const col = th.dataset.col;
+            if (coverageSort.col === col) {
+              coverageSort.dir = coverageSort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+              coverageSort.col = col;
+              coverageSort.dir = col === 'company_name' ? 'asc' : 'desc';
+            }
+            renderCoverage(rows);
+          });
+        });
+      }
+
+      function deltaMarkup(n) {
+        if (n > 0)  return `<span class="delta up">▲ ${n}</span>`;
+        if (n < 0)  return `<span class="delta down">▼ ${Math.abs(n)}</span>`;
+        return `<span class="delta flat">— 0</span>`;
+      }
+
+      function renderActivity(activity) {
+        const root = document.getElementById('activity-grid');
+        if (!activity) {
+          root.innerHTML = '<div class="empty">No activity data yet.</div>';
+          return;
+        }
+        root.innerHTML = ACTIVITY_KEYS.map(([key, label]) => {
+          const a = activity[key] || { this_week: 0, last_week: 0, delta: 0 };
+          const tw = Number(a.this_week) || 0;
+          const lw = Number(a.last_week) || 0;
+          const dl = Number(a.delta) || 0;
+          return `
+            <div class="stat-card">
+              <div class="title">${label}</div>
+              <div class="num">${tw.toLocaleString()}</div>
+              <div class="compare">vs. last week (${lw.toLocaleString()}) ${deltaMarkup(dl)}</div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function renderAll(d) {
+        renderHot(d?.hot_accounts);
+        renderFunnel(d?.funnel, d?.stats?.icp_in_count);
+        renderCoverage(d?.coverage_matrix);
+        renderActivity(d?.weekly_activity);
+        setUpdated(d?.generated_at);
+      }
+
+      function renderEmptyAll() {
+        renderHot([]);
+        renderFunnel(null, 0);
+        renderCoverage([]);
+        renderActivity(null);
+        setUpdated(null);
+      }
+
+      async function load() {
+        try {
+          const r = await fetch('/dashboard.json', { cache: 'no-store' });
+          if (!r.ok) throw new Error('fetch failed');
+          DATA = await r.json();
+          renderAll(DATA);
+        } catch (e) {
+          renderEmptyAll();
+        } finally {
+          document.getElementById('loading').style.display = 'none';
+        }
+      }
+
+      function currentSection() {
+        const h = (location.hash || '').replace(/^#/, '');
+        return SECTIONS.includes(h) ? h : 'hot';
+      }
+
+      document.querySelectorAll('.nav-item').forEach(btn => {
+        btn.addEventListener('click', () => {
+          location.hash = btn.dataset.section;
+        });
+      });
+      window.addEventListener('hashchange', () => activate(currentSection()));
+
+      activate(currentSection());
+      load();
+    </script>
+  </body>
+</html>
