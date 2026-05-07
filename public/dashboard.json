@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T15:02:06.664Z",
+  "generated_at": "2026-05-07T19:21:56.840Z",
   "stats": {
     "total_contacts": 100,
     "total_companies": 100,
@@ -7,32 +7,21 @@
   },
   "hot_accounts": [
     {
-      "company_name": "Holualoa Companies",
-      "score": 73,
-      "last_signal_summary": "Steve Lindley: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "company_name": "Hines",
+      "score": 40,
+      "last_signal_summary": "Christopher Rector: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
       "last_signal_at": "2026-05-12T00:00:00.000Z",
       "contact_count": 1,
       "top_contact": {
-        "name": "Steve Lindley",
-        "title": "Chief Operating Officer"
-      }
-    },
-    {
-      "company_name": "RISE A Real Estate Company",
-      "score": 71,
-      "last_signal_summary": "Jacquelyn Heflin: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
-      "last_signal_at": "2026-05-12T00:00:00.000Z",
-      "contact_count": 1,
-      "top_contact": {
-        "name": "Jacquelyn Heflin",
-        "title": "Executive Vice President of Operations"
+        "name": "Christopher Rector",
+        "title": "Chief Operating Officer, Americas"
       }
     },
     {
       "company_name": "Atlantic Residential",
-      "score": 68,
-      "last_signal_summary": "Andrew Aaronson: The Wrap: OPM’s New AI Tool; GSA Reshapes FAS; Space Chief Nominated",
-      "last_signal_at": "2026-05-04T21:13:31.000Z",
+      "score": 38,
+      "last_signal_summary": "Andrew Aaronson: A year ago, almost to the day, I was on my way to Slovenia for my very first time on stage. \n\nThat opportunity came because Danny McMillan  put me there — he saw something in me be",
+      "last_signal_at": "2026-05-09T00:00:00.000Z",
       "contact_count": 1,
       "top_contact": {
         "name": "Andrew Aaronson",
@@ -40,19 +29,41 @@
       }
     },
     {
-      "company_name": "Venterra Realty",
-      "score": 66,
-      "last_signal_summary": "Julie Tatom: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "company_name": "Atlantic Pacific Companies",
+      "score": 37,
+      "last_signal_summary": "Randy Weisburd: #geopolitics #china #uschina #globalaffairs #strategicadvisory | APCO",
+      "last_signal_at": "2026-05-06T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Randy Weisburd",
+        "title": "Chief Operating Officer"
+      }
+    },
+    {
+      "company_name": "Birchstone Residential",
+      "score": 34,
+      "last_signal_summary": "Amanda Otey: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
       "last_signal_at": "2026-05-12T00:00:00.000Z",
       "contact_count": 1,
       "top_contact": {
-        "name": "Julie Tatom",
-        "title": "Senior Vice President - Property Operations"
+        "name": "Amanda Otey",
+        "title": "Vice President Operations"
+      }
+    },
+    {
+      "company_name": "Middle Street Partners, LLC",
+      "score": 33,
+      "last_signal_summary": "Jeff Kaloupek: Direct Booking Summit | LinkedIn",
+      "last_signal_at": "2026-05-13T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Jeff Kaloupek",
+        "title": "Chief Operating Officer"
       }
     },
     {
       "company_name": "LSA Management",
-      "score": 66,
+      "score": 33,
       "last_signal_summary": "Lisa Landis: CLAS 2026 - Future Ready Contracts and Legal Ops | LinkedIn",
       "last_signal_at": "2026-05-12T00:00:00.000Z",
       "contact_count": 1,
@@ -62,58 +73,47 @@
       }
     },
     {
-      "company_name": "Bell Partners Inc",
-      "score": 64,
-      "last_signal_summary": "Brent Steele: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "company_name": "Knightvest Residential",
+      "score": 33,
+      "last_signal_summary": "Nancy Casteel: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
       "last_signal_at": "2026-05-12T00:00:00.000Z",
       "contact_count": 1,
       "top_contact": {
-        "name": "Brent Steele",
-        "title": "Vice President Operations Accounting & Finance"
+        "name": "Nancy Casteel",
+        "title": "Senior Vice President Operations"
       }
     },
     {
-      "company_name": "Cardinal Group Companies",
-      "score": 64,
-      "last_signal_summary": "Hope Ivory: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
-      "last_signal_at": "2026-05-12T00:00:00.000Z",
-      "contact_count": 1,
-      "top_contact": {
-        "name": "Hope Ivory",
-        "title": "VP of Operations"
-      }
-    },
-    {
-      "company_name": "Ambling",
-      "score": 64,
-      "last_signal_summary": "Mack Casey: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
-      "last_signal_at": "2026-05-12T00:00:00.000Z",
-      "contact_count": 1,
-      "top_contact": {
-        "name": "Mack Casey",
-        "title": "Vice President of Operations"
-      }
-    },
-    {
-      "company_name": "Rise48 Equity",
-      "score": 63,
-      "last_signal_summary": "Dana Stadelman: A year ago, almost to the day, I was on my way to Slovenia for my very first time on stage. \n\nThat opportunity came because Danny McMillan  put me there — he saw something in me be",
+      "company_name": "Kitson & Partners",
+      "score": 32,
+      "last_signal_summary": "William May: Rob Wallbank | Head of Global Product I UHNW Private Travel 🌎",
       "last_signal_at": "2026-05-09T00:00:00.000Z",
       "contact_count": 1,
       "top_contact": {
-        "name": "Dana Stadelman",
-        "title": "Vice President Operations"
+        "name": "William May",
+        "title": "Senior Vice President Operations"
       }
     },
     {
-      "company_name": "Avenue5 Residential",
-      "score": 62,
-      "last_signal_summary": "Natasha Smith: A year ago, almost to the day, I was on my way to Slovenia for my very first time on stage. \n\nThat opportunity came because Danny McMillan  put me there — he saw something in me be",
+      "company_name": "Helu",
+      "score": 32,
+      "last_signal_summary": "Taylor Bassett: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
+      "last_signal_at": "2026-05-12T00:00:00.000Z",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Taylor Bassett",
+        "title": "Chief Operating Officer"
+      }
+    },
+    {
+      "company_name": "University Partners",
+      "score": 31,
+      "last_signal_summary": "Mason McConathy: A year ago, almost to the day, I was on my way to Slovenia for my very first time on stage. \n\nThat opportunity came because Danny McMillan  put me there — he saw something in me be",
       "last_signal_at": "2026-05-09T00:00:00.000Z",
       "contact_count": 1,
       "top_contact": {
-        "name": "Natasha Smith",
-        "title": "Vice President Operations"
+        "name": "Mason McConathy",
+        "title": "Senior Vice President, Operations Strategy"
       }
     }
   ],
