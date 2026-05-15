@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T14:51:26.031Z",
+  "generated_at": "2026-05-15T11:37:32.455Z",
   "stats": {
     "total_contacts": 100,
     "total_companies": 100,
@@ -7,32 +7,54 @@
   },
   "hot_accounts": [
     {
-      "company_name": "Kane Realty Corporation",
-      "score": 47,
-      "last_signal_summary": "Stacey Buescher: Stone & Surfaces Show | LinkedIn",
-      "last_signal_at": "2026-05-14T00:00:00+00:00",
+      "company_name": "Helu",
+      "score": 51,
+      "last_signal_summary": "Taylor Bassett: How to pull off a great conference? Four things I’ve learned.\n\nConferences can be anything: exciting, dull, inspiring, or overwhelming. \n\nI take a simple lens: audience value. Afte",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
       "contact_count": 1,
       "top_contact": {
-        "name": "Stacey Buescher",
-        "title": "Executive Vice President, Commercial Operations"
-      }
-    },
-    {
-      "company_name": "PEBB Enterprises",
-      "score": 47,
-      "last_signal_summary": "Gregory Moross: Peter Beaumont | CEO of Ampla Finance Ltd",
-      "last_signal_at": "2026-05-16T00:00:00+00:00",
-      "contact_count": 1,
-      "top_contact": {
-        "name": "Gregory Moross",
+        "name": "Taylor Bassett",
         "title": "Chief Operating Officer"
       }
     },
     {
+      "company_name": "Hogan Group",
+      "score": 44,
+      "last_signal_summary": "Ray Mills: Yesterday, at the B2B Marketing Leaders Forum | Singapore | 8-9 October 2025 we gave a preview of the soon to be released 5th edition of The dentsu B2B Superpowers Index  \n\nWe rega",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Ray Mills",
+        "title": "President & COO"
+      }
+    },
+    {
+      "company_name": "Codina Partners",
+      "score": 40,
+      "last_signal_summary": "Antuanet Alvarez: SIMA - The Global Hub of Living | LinkedIn",
+      "last_signal_at": "2026-05-22T00:00:00+00:00",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Antuanet Alvarez",
+        "title": "Vice President of Corporate Operations"
+      }
+    },
+    {
+      "company_name": "Hunt Companies, Inc",
+      "score": 40,
+      "last_signal_summary": "Michael Knight: How to pull off a great conference? Four things I’ve learned.\n\nConferences can be anything: exciting, dull, inspiring, or overwhelming. \n\nI take a simple lens: audience value. Afte",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Michael Knight",
+        "title": "Vice President Operations"
+      }
+    },
+    {
       "company_name": "Kitson & Partners",
-      "score": 46,
-      "last_signal_summary": "William May: Stone & Surfaces Show | LinkedIn",
-      "last_signal_at": "2026-05-14T00:00:00+00:00",
+      "score": 39,
+      "last_signal_summary": "William May: Yesterday, at the B2B Marketing Leaders Forum | Singapore | 8-9 October 2025 we gave a preview of the soon to be released 5th edition of The dentsu B2B Superpowers Index  \n\nWe rega",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
       "contact_count": 1,
       "top_contact": {
         "name": "William May",
@@ -41,9 +63,9 @@
     },
     {
       "company_name": "The Kolter Group",
-      "score": 46,
-      "last_signal_summary": "Derek Fenech: Direct Booking Summit | LinkedIn",
-      "last_signal_at": "2026-05-13T00:00:00+00:00",
+      "score": 39,
+      "last_signal_summary": "Derek Fenech: Yesterday, at the B2B Marketing Leaders Forum | Singapore | 8-9 October 2025 we gave a preview of the soon to be released 5th edition of The dentsu B2B Superpowers Index  \n\nWe rega",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
       "contact_count": 1,
       "top_contact": {
         "name": "Derek Fenech",
@@ -51,10 +73,21 @@
       }
     },
     {
+      "company_name": "PeakMade Real Estate",
+      "score": 37,
+      "last_signal_summary": "Michael Costello: How to pull off a great conference? Four things I’ve learned.\n\nConferences can be anything: exciting, dull, inspiring, or overwhelming. \n\nI take a simple lens: audience value. Afte",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
+      "contact_count": 1,
+      "top_contact": {
+        "name": "Michael Costello",
+        "title": "Vice President of People Operations"
+      }
+    },
+    {
       "company_name": "Atlantic Pacific Companies",
-      "score": 45,
-      "last_signal_summary": "Randy Weisburd: #leadership #management #fundraising #startup #workculture #governance #board #people #relationships #systemsthinking #motivation #actxa #travelgoogoo #informaticsthames #whatinspi",
-      "last_signal_at": "2026-05-11T00:00:00+00:00",
+      "score": 36,
+      "last_signal_summary": "Randy Weisburd: Yesterday, at the B2B Marketing Leaders Forum | Singapore | 8-9 October 2025 we gave a preview of the soon to be released 5th edition of The dentsu B2B Superpowers Index  \n\nWe rega",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
       "contact_count": 1,
       "top_contact": {
         "name": "Randy Weisburd",
@@ -62,343 +95,38 @@
       }
     },
     {
-      "company_name": "Segale Properties",
-      "score": 45,
-      "last_signal_summary": "Phillip Combs: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
-      "last_signal_at": "2026-05-12T00:00:00+00:00",
+      "company_name": "Southeast Centers",
+      "score": 36,
+      "last_signal_summary": "Greg Scott: Yesterday, at the B2B Marketing Leaders Forum | Singapore | 8-9 October 2025 we gave a preview of the soon to be released 5th edition of The dentsu B2B Superpowers Index  \n\nWe rega",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
       "contact_count": 1,
       "top_contact": {
-        "name": "Phillip Combs",
-        "title": "Chief Operations Officer"
-      }
-    },
-    {
-      "company_name": "Signature Property Group, Inc.",
-      "score": 45,
-      "last_signal_summary": "Nathaniel Steward: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
-      "last_signal_at": "2026-05-12T00:00:00+00:00",
-      "contact_count": 1,
-      "top_contact": {
-        "name": "Nathaniel Steward",
-        "title": "Vice President of Finance and Operations"
-      }
-    },
-    {
-      "company_name": "Stream Realty Partners",
-      "score": 45,
-      "last_signal_summary": "Blake Kendrick: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
-      "last_signal_at": "2026-05-12T00:00:00+00:00",
-      "contact_count": 1,
-      "top_contact": {
-        "name": "Blake Kendrick",
+        "name": "Greg Scott",
         "title": "Chief Operating Officer"
       }
     },
     {
-      "company_name": "YMP Real Estate Management, LLC.",
-      "score": 40,
-      "last_signal_summary": "C Stone: Stone & Surfaces Show | LinkedIn",
-      "last_signal_at": "2026-05-14T00:00:00+00:00",
+      "company_name": "University Partners",
+      "score": 36,
+      "last_signal_summary": "Mason McConathy: How to pull off a great conference? Four things I’ve learned.\n\nConferences can be anything: exciting, dull, inspiring, or overwhelming. \n\nI take a simple lens: audience value. Afte",
+      "last_signal_at": "2026-05-21T00:00:00+00:00",
       "contact_count": 1,
       "top_contact": {
-        "name": "C Stone",
-        "title": "Vice President Clinical Operations"
-      }
-    },
-    {
-      "company_name": "Rise48 Equity",
-      "score": 38,
-      "last_signal_summary": "Dana Stadelman: Exciting news!\nWe are honoured to have been nominated as a Rayovac Hearing Hero for 2024.\nThis is particularly exciting to us, as we are driven to continually improve the hearing h",
-      "last_signal_at": "2026-05-12T00:00:00+00:00",
-      "contact_count": 1,
-      "top_contact": {
-        "name": "Dana Stadelman",
-        "title": "Vice President Operations"
+        "name": "Mason McConathy",
+        "title": "Senior Vice President, Operations Strategy"
       }
     }
   ],
   "funnel": {
-    "none": 49,
-    "requested": 51,
+    "none": 0,
+    "requested": 100,
     "accepted": 0,
     "declined": 0,
     "total": 100
   },
   "coverage_matrix": [
     {
-      "company_name": "Kane Realty Corporation",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "PEBB Enterprises",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Kitson & Partners",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "The Kolter Group",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Atlantic Pacific Companies",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Segale Properties",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Signature Property Group, Inc.",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Stream Realty Partners",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "YMP Real Estate Management, LLC.",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Rise48 Equity",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Southeast Centers",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "HOAMCO (Homeowners Association Management Company)",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Wasatch Property Management",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Lincoln Property Company",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "LSA Management",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Atlantic Residential",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "TAM Residential",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "JPI",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Miller Global Properties, LLC",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Lake Washington Partners",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Cortland",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Weidner Apartment Homes",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Knightvest Residential",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Everest Holdings",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Griffin Partners Inc.",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Ashford Communities",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Beacon Partners",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Codina Partners",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
       "company_name": "Helu",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Middle Street Partners, LLC",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Greenleaf",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "PeakMade Real Estate",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "RPM Living",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Henry Turley Company",
-      "decision_maker": 1,
-      "champion": 0,
-      "influencer": 0,
-      "blocker": 0,
-      "total": 1
-    },
-    {
-      "company_name": "Cardinal Group Companies",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -414,7 +142,7 @@
       "total": 1
     },
     {
-      "company_name": "Holualoa Companies",
+      "company_name": "Codina Partners",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -422,7 +150,7 @@
       "total": 1
     },
     {
-      "company_name": "Bonner Carrington",
+      "company_name": "Hunt Companies, Inc",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -430,7 +158,7 @@
       "total": 1
     },
     {
-      "company_name": "The Siegel Group",
+      "company_name": "Kitson & Partners",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -438,7 +166,7 @@
       "total": 1
     },
     {
-      "company_name": "Keel Team Real Estate Investments",
+      "company_name": "The Kolter Group",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -446,7 +174,7 @@
       "total": 1
     },
     {
-      "company_name": "Landmark Properties, Inc.",
+      "company_name": "PeakMade Real Estate",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -454,7 +182,7 @@
       "total": 1
     },
     {
-      "company_name": "Integra-Peak Management",
+      "company_name": "Atlantic Pacific Companies",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -462,7 +190,7 @@
       "total": 1
     },
     {
-      "company_name": "Alturas Capital Partners",
+      "company_name": "Southeast Centers",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -470,7 +198,7 @@
       "total": 1
     },
     {
-      "company_name": "Pegasus Residential",
+      "company_name": "University Partners",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -478,7 +206,7 @@
       "total": 1
     },
     {
-      "company_name": "Bridge Property Management",
+      "company_name": "Lake Washington Partners",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -486,7 +214,7 @@
       "total": 1
     },
     {
-      "company_name": "Birchstone Residential",
+      "company_name": "Howard Hughes Communities",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -494,7 +222,15 @@
       "total": 1
     },
     {
-      "company_name": "Jamestown",
+      "company_name": "Greenleaf",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Stream Realty Partners",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -510,7 +246,7 @@
       "total": 1
     },
     {
-      "company_name": "MC Companies",
+      "company_name": "Cambridge Management Services, Inc.",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -518,7 +254,271 @@
       "total": 1
     },
     {
-      "company_name": "Howard Hughes Communities",
+      "company_name": "Griffin Partners Inc.",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Cortland",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "The Praedium Group",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "The Siegel Group",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Venterra Realty",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "PEBB Enterprises",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Beacon Partners",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Liberty Investment Properties",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Ascension Multifamily",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Hines",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Grubb Properties",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Alturas Capital Partners",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Preiss",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Signature Property Group, Inc.",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "PREP Property Group (PREP)",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Wogan Group",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Wasatch Property Management",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "AREY Group",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Integra-Peak Management",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Keel Team Real Estate Investments",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Segale Properties",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "LSA Management",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Olympus Property",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Bridge Property Management",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Kane Realty Corporation",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Atlantic Residential",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Middle Street Partners, LLC",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Taft Family Ventures",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Presidium",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Elmington",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Woodbury Corporation",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "KPM Property Management",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Pegasus Residential",
+      "decision_maker": 1,
+      "champion": 0,
+      "influencer": 0,
+      "blocker": 0,
+      "total": 1
+    },
+    {
+      "company_name": "Bellaire Multifamily Management",
       "decision_maker": 1,
       "champion": 0,
       "influencer": 0,
@@ -528,9 +528,9 @@
   ],
   "weekly_activity": {
     "connections_requested": {
-      "this_week": 51,
+      "this_week": 100,
       "last_week": 0,
-      "delta": 51
+      "delta": 100
     },
     "connections_accepted": {
       "this_week": 0,
